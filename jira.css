@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    /* border: 2px solid red; */
+    min-height: 500px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 20px;
+    gap: 40px;
+    
+}
+
+
+.box{
+    width: 300px;
+    background-color: #F4F5F7;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    box-shadow: 2px -2px 10px gray;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 20px;
+    align-items: center;
+}
+
+.title + .material-icons{
+    visibility: hidden;
+}
+
+.title-container > .title:hover + .material-icons{
+    visibility: visible;
+}
+
+.title:hover{
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box .title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #5E6C84;
+    flex-grow: 1;
+    transition: 0.3s;
+}
+
+
+#create-issue{
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color:#41526E ;
+    font-size: 18px;
+    gap: 10px;
+    transition-duration: 0.4s;
+    padding: 4px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#create-issue:hover{
+    background-color: #e4e4e4;
+    
+}
+
+.item{
+    border: 2px solid #0052CC;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    max-width: 280px;
+}
+
+
+
+.item > textarea, .item > textarea:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.item > select:focus{
+    outline : none;
+}
+
+
+.item > select {
+    border: none;
+    outline : none;
+    padding: 2px;
+    background-color: transparent;
+    align-self: flex-start;
+}
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(217, 100%, 50%, 0.158);
+    display: flex;
+    justify-content: center;
+}
+
+.modal form {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 100px;
+    gap: 20px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    width: 30vw;
+    position: relative;
+}
+
+.modal input, .modal textarea, .modal button, .modal select{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #F4F5F7;
+    border:none;
+} 
+
+.modal input:focus , .modal textarea:focus, .modal select:focus{
+    border:2px solid #0052CC;
+    outline: none;
+}
+
+
+.modal button{
+    background-color: #0052CC;
+    color: white;
+    cursor: pointer;
+}
+
+
+.close{
+    position : absolute;
+    right: 10px;
+    top : 10px;
+    cursor: pointer;
+}
+
+
+.card{
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgb(197, 196, 196);
+}
+
+.task_name, .Description, .progress, .asignee_name{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+.card .status-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .asignee_name::before{
+    display:inline-block;
+    content: attr(data-short-name);
+    /* border: 1px solid red; */
+    padding: 5px 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background-color: rgb(255, 81, 0);
+}

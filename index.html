@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Feature</title>
+    <link rel="stylesheet" href="jira.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="box" id="TO_DO">
+            <div class="title-container">
+                <p class="title">TO DO 2 ISSUES</p>
+                <span class="material-icons">more_horiz</span>
+            </div>
+
+
+            <button id="create-issue">
+                <span class="material-icons">add</span>
+                <span class="">Create Issue</span>
+            </button>
+
+
+            <!-- <div class="card">
+                <p class="task_name">Task Name</p>
+                <p class="Description">Description</p>
+                <div class="status-container">
+                    <p class="asignee_name" data-short-name="SA" data-bg-color="yellow">S</p>
+                    <p class="progress">Status</p>
+                </div>
+            </div> -->
+
+            <!-- <div class="item">
+                <textarea name="" id="" cols="46" rows="3 " style="resize: none;"></textarea>
+                <select name="" id="">
+                    <option value="">ABC</option>
+                    <option value="">XYZ</option>
+                </select>
+            </div> -->
+        </div>
+
+
+
+        <div class="box" id="IN_PROGRESS">
+
+            <div class="title-container">
+                <p class="title">IN PROGRESS</p>
+                <span class="material-icons">more_horiz</span>
+            </div>
+        </div> 
+
+
+
+
+        <div class="box" id="COMPLETED">
+
+            <div class="title-container">
+                <p class="title">COMPLETED</p>
+                <span class="material-icons">more_horiz</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="modal" id="modal">
+        <div class="modal-body">
+            <form action="">
+                <span class="material-icons close" onclick="closeModal()" >close</span>
+                <p style="color: #182A4D; font-weight: 700;">ADD TASK</p>
+                <input type="text" name="taskName" placeholder="  Task Name">
+                <textarea rows="3" type="text" name="description" placeholder="  Description" style="resize: none;"></textarea>
+                <input type="text" name="assigneeName" placeholder="  Assignee Name">
+                <select name="status" id="">
+                    <option value="TO_DO">TO DO</option>
+                    <option value="IN-PROGRESS">IN PROGRESS</option>
+                    <option value="COMPLETED">COMPLETED</option>
+                </select>
+
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </div>   -->
+
+
+    <script src="jira.js"></script>
+    <script src="dragable.js"></script>
+</body>
+</html>
